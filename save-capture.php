@@ -1,5 +1,5 @@
 <?php
-define('UPLOAD_DIR', 'images2/');  
+define('UPLOAD_DIR', 'images/');  
 $image = $_POST["image"];
 $image=explode(";",$image)[1];
 $image = explode(",",$image)[1];

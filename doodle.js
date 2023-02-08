@@ -28,6 +28,8 @@ function setup() {
   cnv.mouseOut(guess);
   cnv.touchStarted(guess);
   cnv.parent('canvasContainer');
+  cnv.mouseOver(showButton);
+  document.getElementById('myBtn').style.visibility = 'hidden';
 
 }
 
@@ -230,6 +232,12 @@ function getInputImage() {
   return inputs;
 }
 
+
+function showButton(){
+  document.getElementById('myBtn').style.visibility = 'visible';
+}
+
+
 function draw() {
   strokeWeight(10);
   stroke(0);
@@ -237,6 +245,3 @@ function draw() {
     line(pmouseX, pmouseY, mouseX, mouseY);
   }
 }
-
-
-
